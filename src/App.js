@@ -7,13 +7,13 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import {useAuthState} from 'react-firebase-hooks/auth'
 firebase.initializeApp ({
-  apiKey: "AIzaSyCgafRCCcWDbFVXddMeX6XtEvLfVuj7w0A",
-  authDomain: "v-chat-f2b7f.firebaseapp.com",
-  projectId: "v-chat-f2b7f",
-  storageBucket: "v-chat-f2b7f.appspot.com",
-  messagingSenderId: "354897923060",
-  appId: "1:354897923060:web:07d3e6222ae16c025e47a1",
-  measurementId: "G-ZZJQMX7XEQ"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 });
 const auth = firebase.auth()
 function App() {
