@@ -1,0 +1,26 @@
+#signIn {
+     background-color: rgb(24, 23, 23);
+}
+.signIn-btn {
+     color: black;
+     display: flex;
+     align-items: center;
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 1px 1px 10px 5px rgb(20, 20, 20);
+     border: none;
+     max-width: 400px;
+     margin: 0 auto;
+     padding: 7px 30px;
+     cursor: pointer;
+}
+.signIn-btn img {
+     width: 40px;
+     height: 40px;
+     margin-right: 14px;
+}
+p {
+     color: white;
+     text-align: center;
+     letter-spacing: 1px;
+}

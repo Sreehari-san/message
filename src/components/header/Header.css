@@ -1,0 +1,22 @@
+header {
+     background-color: rgb(0, 106, 255);
+     height: 10vh;
+     min-height: 50px;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     max-width: 728px;
+     display: flex;
+     justify-content: space-between;
+     padding: 10px;
+     box-sizing: border-box;
+}
+header img {
+     height: 40px;
+     width: 40px;
+     cursor: pointer;
+     margin-top: -5px;
+}
+#logo {
+     border-radius:50%;
+}

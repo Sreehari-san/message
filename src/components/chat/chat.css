@@ -1,0 +1,75 @@
+.chat-window {
+     height: 81vh;
+     padding: 10px;
+     margin: 10vh 0 10vh;
+     background-color: rgb(24, 23, 23);
+     background-size: contain;
+     display: flex;
+     flex-direction: column;
+     overflow-y: scroll;
+}
+form {
+     height: 9vh;
+     position: fixed;
+     bottom: 0;
+     background-color: rgb(233, 233, 233);
+     width: 100%;
+     max-width: 728px;
+     font-size: 1rem;
+     display: flex;
+}
+form button {
+     width: 20%;
+     background-color: rgb(233, 233, 233);
+     border: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 50px;
+}
+form button i {
+     font-size: 18px;
+     margin-top: -5px;
+}
+form input {
+     line-height: 1.5;
+     width: 100%;
+     font-size: 1.5rem;
+     background-color: rgb(233, 233, 233);
+     outline: none;
+     color: #111;
+     height: 50px;
+     font-size: 15px;
+     border: none;
+     padding-left: 10px;
+     border-right: 1px solid grey;
+}
+.message {
+     display: flex;
+     align-items: center;
+}
+.message img {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     margin: 2px 5px;
+}
+.message p {
+     max-width: 500px;
+     margin-bottom: 12px;
+     line-height: 24px;
+     padding: 10px 20px;
+     color: white;
+}
+.sent {
+     flex-direction: row-reverse;
+}
+.sent p {
+     color: white;
+     background-color: #0b93f6;
+     align-self: flex-end;
+     border-radius: 20px;
+}
+.recived p {
+     background: #e5e5ea;
+}
