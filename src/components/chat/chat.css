@@ -59,7 +59,6 @@ form input {
      margin-bottom: 12px;
      line-height: 24px;
      padding: 10px 20px;
-     color: white;
 }
 .sent {
      flex-direction: row-reverse;
@@ -72,4 +71,6 @@ form input {
 }
 .recived p {
      background: #e5e5ea;
+     color: black;
+     border-radius: 20px;
 }
