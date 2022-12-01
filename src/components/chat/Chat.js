@@ -12,8 +12,7 @@ const Chat = ({user}) => {
      const messagesRef=firestore.collection("messages")
      const query = messagesRef.orderBy("createdAt").limit(25)
      const [messages] = useCollectionData(query, {idField: "id"})
-
-     const sendMessage =async e => {
+     const sendMessage =async (e) => {
           e.preventDefault();
           const {uid, photoURL}=user
           await messagesRef.add({
@@ -27,7 +26,8 @@ const Chat = ({user}) => {
   return (
      <>
      <div className='chat-window'>
-          { messages&&messages.map((msg) => <Message key={msg.id} message={msg} user={user} />) }
+          { messages
+          &&messages.map((msg) => <Message key={msg.id} message={msg} user={user} />) }
      <span ref={
           dummy
      }></span>
