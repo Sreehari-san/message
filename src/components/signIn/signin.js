@@ -10,7 +10,7 @@ const signIn = ({auth}) => {
   return (
     <div id='signIn'>
      <br /><br />
-     <p>SignIn to chat</p>
+     <p>Sign In to chat</p>
      <br />
      <button className='signIn-btn' onClick={signInWithGoogle}>
      <img src="https://cdn.pixabay.com/photo/2015/12/11/11/43/google-1088004__340.png" alt="google" id='signin-logo' />
