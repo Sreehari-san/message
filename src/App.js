@@ -21,7 +21,11 @@ function App() {
   return (
     <div className="App">
       <Header auth={auth} user={user}/>
-      <section>{user ? <Chat user={user}/>:<SignIn auth={auth}/>}</section>
+      <section>
+        {user ? <Chat user={user}/>
+        :
+        <SignIn auth={auth}/>}
+        </section>
     </div>
   );
 }
